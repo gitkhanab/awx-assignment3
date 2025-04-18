@@ -1,0 +1,9 @@
+---
+- name: Backup network device configurations
+  hosts: all
+  gather_facts: no
+
+  tasks:
+    - name: Simulate device config backup
+      debug:
+        msg: "Backing up configuration for {{ inventory_hostname }}"
